@@ -1,0 +1,27 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.fav {
+    width: 80px;
+    height: 80px;
+    background: transparent url("twitter_like_heart_animation.png") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.fav:hover {
+    animation: like 1s steps(28) forwards;
+}
+
+@keyframes like {
+    0% {background-position: 0 0;}
+    100% {background-position: -2240px 0;}
+}
