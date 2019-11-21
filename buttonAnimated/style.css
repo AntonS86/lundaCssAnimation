@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.button {
+    width: 130px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background: #95b8cb;
+    border: 1px solid #678bb3;
+    cursor: pointer;
+    color: #ffffff;
+    box-shadow:2px 2px 2px rgba(0,0,0,0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.pulse {
+    background-color: aqua;
+    border-radius: 50%;
+    animation: pulse .5s ease-out;
+    transform: scale(0);
+    position: absolute;
+}
+
+@keyframes pulse {
+    to {
+        transform: scale(2);
+        /*background-color: #fff;*/
+        opacity: 0;
+    }
+}
